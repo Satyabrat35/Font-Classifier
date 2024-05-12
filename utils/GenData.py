@@ -6,8 +6,8 @@ import os
 #########################################################################
 # Generates 100 sample images for each font style - increase dataset
 #########################################################################
-font_directory = 'fonts'
-output_directory = 'data'
+font_directory = '../fonts'
+output_directory = '../data'
 
 # Number of samples per font
 num_samples_per_font = 100
