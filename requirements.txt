@@ -1,0 +1,12 @@
+pillow
+opencv-python
+transformers
+os
+json
+torch
+torchvision
+fontpreview
+wonderwords
+random
+matplotlib
+warnings
