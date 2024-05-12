@@ -4,6 +4,10 @@ import torch.nn as nn
 
 class CNNModifiedModel(nn.Module):
     def __init__(self, num_classes=10):
+        """
+        Model definition
+        :param num_classes: 10
+        """
         # Inheritance
         super(CNNModifiedModel, self).__init__()
 
@@ -43,6 +47,11 @@ class CNNModifiedModel(nn.Module):
         self.layer_fc = nn.Linear(128 * 18 * 31, num_classes)
 
     def forward(self, input):
+        """
+        Forward pass
+        :param input:
+        :return:
+        """
         output = self.layer_1(input)
         output = self.layer_2(output)
         output = self.layer_3(output)

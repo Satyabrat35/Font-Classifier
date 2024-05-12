@@ -12,15 +12,19 @@ def main(label_mapping):
 
     checkpoint_dir = 'model checkpoint'
 
-    #### Use the appropriate model's ckpt file
+    ################################################################################
+    # Use the appropriate model's ckpt file
+    ################################################################################
+
     # checkpoint_file = 'cnnbaseline.ckpt'
     # checkpoint_file = 'cnnmodified.ckpt'
     checkpoint_file = 'resnet.ckpt'
 
-
     ckpt_path = os.path.join(checkpoint_dir, checkpoint_file)
 
-    #### Uncomment the model that you wish to test your data against
+    ################################################################################
+    # Uncomment the model that you wish to test your data against
+    ################################################################################
     # model = CNNBaselineModel()
     # model = CNNModifiedModel()
 
@@ -32,11 +36,15 @@ def main(label_mapping):
         torch.nn.Linear(features, 10)
     )
 
+    ################################################################################
+    # Load model weights
+    ################################################################################
     model.load_state_dict(torch.load(ckpt_path, map_location=torch.device('cpu')))
 
-
+    ################################################################################
+    # Process image
+    ################################################################################
     sample_image_path = 'sample.png'
-
     image = ImageProcessor(width=500, height=300)
     img = image.processImage(sample_image_path)
     batch_img = image.transposeImage(img)
