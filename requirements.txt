@@ -1,4 +1,4 @@
-pillow
+Pillow==9.5.0
 opencv-python
 transformers
 os
