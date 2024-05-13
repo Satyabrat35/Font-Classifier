@@ -67,5 +67,3 @@ poorly for the `Allura` font class.
 2. Train set - 1254
 3. Validation set - 269
 4. Test set - 269
-
-`conda create --name <env_name>`
