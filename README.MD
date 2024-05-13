@@ -54,6 +54,10 @@ Test the ViT Model (same dir) -
 
 ``python TestModelViT.py``
 
+Example - 
+![img.png](img/modeltest.png)
+
+
 ## Inference.xlsx
 It contains the inference time i.e.average epoch time,
 test evaluation time, accuracy score for each models in GPU and CPU setting (except ViT).
