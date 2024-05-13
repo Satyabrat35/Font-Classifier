@@ -1,13 +1,11 @@
 Pillow==9.5.0
 opencv-python
 transformers
-os
-json
 torch
 torchvision
 fontpreview
 wonderwords
-random
 matplotlib
-warnings
 gdown
+numpy
+pandas

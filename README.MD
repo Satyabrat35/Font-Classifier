@@ -3,19 +3,25 @@ This repository contains the code for a Font Classifier, a machine learning mode
 Four different classifier models were explored for this task: a CNN baseline, a modified CNN, a modified ResNet-18, and a Vision Transformer (ViT) model.
 
 ## Repository Structure
-1. data - Contains a collection of 1792 images showcasing 10 distinct font styles.
-2. fonts - Includes TrueType Font (.ttf) files utilized for generating additional samples.
-3. ipynb files - Comprises IPython Notebook files corresponding to each employed model. These files were executed on the Kaggle platform.
-4. model checkpoint - Houses the weights for all models, excluding the ViT model, which can be obtained through the provided steps.
-5. models - Contains skeleton code for the CNN Baseline, CNN Modified, and Resnet Modified models, along with image processing techniques.
-6. test - Includes two test files utilized for testing the developed or fine-tuned models with a sample image.
-7. utils - Contains utility files, such as code for generating test sample images, data samples, and downloading ViT model weights.
-8. label_mapping.json - Represents the mapping of label fonts to numeric values, utilizing Label Encoder.
-9. sample.png - A sample image employed for model testing purposes.
-10. Inference.xlsx - A documented record detailing the inference results obtained from each model.
-11. img - Contains few images wrt to model and inference time.
+1. `data` - Contains a collection of 1792 images showcasing 10 distinct font styles.
+2. `fonts` - Includes TrueType Font (.ttf) files utilized for generating additional samples.
+3. `ipynb files` - Comprises IPython Notebook files corresponding to each employed model. These files were executed on the Kaggle platform.
+4. `model checkpoint` - Houses the weights for all models, excluding the ViT model, which can be obtained through the provided steps.
+5. `models` - Contains skeleton code for the CNN Baseline, CNN Modified, and Resnet Modified models, along with image processing techniques.
+6. `test` - Includes two test files utilized for testing the developed or fine-tuned models with a sample image.
+7. `utils` - Contains utility files, such as code for generating test sample images, data samples, and downloading ViT model weights.
+8. `label_mapping.json` - Represents the mapping of label fonts to numeric values, utilizing Label Encoder.
+9. `sample.png` - A sample image employed for model testing purposes.
+10. `Inference.xlsx` - A documented record detailing the inference results obtained from each model.
+11. `img` - Contains few images wrt to model and inference time.
 
 ## Instructions to Test the models
+Conda Environment (optional) - 
+
+``conda create --name <env_name>``
+
+``conda activate <env_name>``
+
 Install the required libraries (root folder) - 
 
 ``pip install -r requirements.txt``
@@ -61,3 +67,5 @@ poorly for the `Allura` font class.
 2. Train set - 1254
 3. Validation set - 269
 4. Test set - 269
+
+`conda create --name <env_name>`
