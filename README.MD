@@ -36,7 +36,7 @@ Download ViT weights (utils folder) -
 
 ``python DownloadTensorFile.py``
 
-Create a sample image (utils folder) -
+Create a sample image to test the model (utils folder) -
 
 ``cd utils``
 
