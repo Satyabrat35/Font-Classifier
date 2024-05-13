@@ -1,6 +1,6 @@
 # Font Classifier
 This repository contains the code for a Font Classifier, a machine learning model that takes an image of text as input and predicts the font used in the image from a predefined list of 10 fonts. 
-Four different classifier models were explored for this task: a CNN baseline, a modified CNN, a modified ResNet-18, and a Vision Transformer (ViT) model.
+Four different classifier models were explored for this task: a CNN baseline, a modified CNN, a fine-tuned ResNet-18, and a fine-tuned Vision Transformer (ViT) model.
 
 ## Repository Structure
 1. `data` - Contains a collection of 1792 images showcasing 10 distinct font styles.
@@ -16,13 +16,17 @@ Four different classifier models were explored for this task: a CNN baseline, a 
 11. `img` - Contains few images wrt to model and inference time.
 
 ## Instructions to Test the models
+Download the repository code - 
+
+``git clone git@github.com:Satyabrat35/Font-Classifier.git``
+
 Conda Environment (optional) - 
 
 ``conda create --name <env_name>``
 
 ``conda activate <env_name>``
 
-Install the required libraries (root folder) - 
+Install the required libraries (project root folder) - 
 
 ``pip install -r requirements.txt``
 
@@ -56,11 +60,19 @@ test evaluation time, accuracy score for each models in GPU and CPU setting (exc
 Also contains the model size, no of parameters and the test accuracy of each class
 against each model.
 
+Check - [Inference.xlsx](Inference.xlsx)
+
+![img.png](img/inference.png)
+
 ## Metrics
 Used averaged accuracy as the main metric for model evaluation.
 Also calculated precision, recall and accuracy for each class for the 4 models.
 One noticeable observation - CNN variants and Resnet18 model tend to perform 
 poorly for the `Allura` font class.
+
+Test Accuracy for each class - 
+![img_1.png](img/AccuracyClassWise.png)
+
 
 ## Data split
 1. Total images - 1792
